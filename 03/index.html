@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Stack Controller</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Image Stack Controller</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <h3>Margin</h3>
+                <div class="slider-container">
+                    <input type="range" min="0" max="100" value="20" class="slider" id="marginSlider">
+                    <span class="value-display" id="marginValue">20px</span>
+                </div>
+            </div>
+      
+            <div class="control-group">
+                <h3>Opacity</h3>
+                <div class="slider-container">
+                    <input type="range" min="10" max="100" value="100" class="slider" id="opacitySlider">
+                    <span class="value-display" id="opacityValue">100%</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-stack-container">
+            <div class="image-stack">
+                <div class="stack-image" id="image">
+                    <div class="image-content" >Image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
