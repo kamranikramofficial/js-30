@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drum Kit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>Drum Kit</h1>
+        <p class="instructions">Press keys A S D F G H J K L or tap the pads</p>
+        
+        <div class="drum-kit">
+            <div data-key="65" class="drum-pad">
+                <div class="key-label">A</div>
+                <span class="sound-name">Kick</span>
+            </div>
+            <div data-key="83" class="drum-pad">
+                <div class="key-label">S</div>
+                <span class="sound-name">Snare</span>
+            </div>
+            <div data-key="68" class="drum-pad">
+                <div class="key-label">D</div>
+                <span class="sound-name">Hi-Hat</span>
+            </div>
+            <div data-key="70" class="drum-pad">
+                <div class="key-label">F</div>
+                <span class="sound-name">Tom</span>
+            </div>
+            <div data-key="71" class="drum-pad">
+                <div class="key-label">G</div>
+                <span class="sound-name">Clap</span>
+            </div>
+            <div data-key="72" class="drum-pad">
+                <div class="key-label">H</div>
+                <span class="sound-name">Boom</span>
+            </div>
+            <div data-key="74" class="drum-pad">
+                <div class="key-label">J</div>
+                <span class="sound-name">Open Hat</span>
+            </div>
+            <div data-key="75" class="drum-pad">
+                <div class="key-label">K</div>
+                <span class="sound-name">Ride</span>
+            </div>
+            <div data-key="76" class="drum-pad">
+                <div class="key-label">L</div>
+                <span class="sound-name">Golf Swing</span>
+            </div>
+        </div>
+        
+        <div class="visualizer-container">
+            <canvas id="visualizer"></canvas>
+        </div>
+    </div>
+
+    <audio data-key="65" src="sounds/kick.wav"></audio>
+    <audio data-key="83" src="sounds/snare.wav"></audio>
+    <audio data-key="68" src="sounds/hihat.wav"></audio>
+    <audio data-key="70" src="sounds/tom.wav"></audio>
+    <audio data-key="71" src="sounds/clap.wav"></audio>
+    <audio data-key="72" src="sounds/boom.wav"></audio>
+    <audio data-key="74" src="sounds/openhat.wav"></audio>
+    <audio data-key="75" src="sounds/ride.wav"></audio>
+    <audio data-key="76" src="sounds/golfSwing.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
