@@ -1,0 +1,252 @@
+[
+    {
+      "id": 1,
+      "name": "New York",
+      "state": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Los Angeles",
+      "state": "California"
+    },
+    {
+      "id": 3,
+      "name": "Chicago",
+      "state": "Illinois"
+    },
+    {
+      "id": 4,
+      "name": "Houston",
+      "state": "Texas"
+    },
+    {
+      "id": 5,
+      "name": "Phoenix",
+      "state": "Arizona"
+    },
+    {
+      "id": 6,
+      "name": "Philadelphia",
+      "state": "Pennsylvania"
+    },
+    {
+      "id": 7,
+      "name": "San Antonio",
+      "state": "Texas"
+    },
+    {
+      "id": 8,
+      "name": "San Diego",
+      "state": "California"
+    },
+    {
+      "id": 9,
+      "name": "Dallas",
+      "state": "Texas"
+    },
+    {
+      "id": 10,
+      "name": "San Jose",
+      "state": "California"
+    },
+    {
+      "id": 11,
+      "name": "Austin",
+      "state": "Texas"
+    },
+    {
+      "id": 12,
+      "name": "Jacksonville",
+      "state": "Florida"
+    },
+    {
+      "id": 13,
+      "name": "Fort Worth",
+      "state": "Texas"
+    },
+    {
+      "id": 14,
+      "name": "Columbus",
+      "state": "Ohio"
+    },
+    {
+      "id": 15,
+      "name": "San Francisco",
+      "state": "California"
+    },
+    {
+      "id": 16,
+      "name": "Charlotte",
+      "state": "North Carolina"
+    },
+    {
+      "id": 17,
+      "name": "Indianapolis",
+      "state": "Indiana"
+    },
+    {
+      "id": 18,
+      "name": "Seattle",
+      "state": "Washington"
+    },
+    {
+      "id": 19,
+      "name": "Denver",
+      "state": "Colorado"
+    },
+    {
+      "id": 20,
+      "name": "Washington",
+      "state": "District of Columbia"
+    },
+    {
+      "id": 21,
+      "name": "Boston",
+      "state": "Massachusetts"
+    },
+    {
+      "id": 22,
+      "name": "El Paso",
+      "state": "Texas"
+    },
+    {
+      "id": 23,
+      "name": "Nashville",
+      "state": "Tennessee"
+    },
+    {
+      "id": 24,
+      "name": "Detroit",
+      "state": "Michigan"
+    },
+    {
+      "id": 25,
+      "name": "Oklahoma City",
+      "state": "Oklahoma"
+    },
+    {
+      "id": 26,
+      "name": "Portland",
+      "state": "Oregon"
+    },
+    {
+      "id": 27,
+      "name": "Las Vegas",
+      "state": "Nevada"
+    },
+    {
+      "id": 28,
+      "name": "Memphis",
+      "state": "Tennessee"
+    },
+    {
+      "id": 29,
+      "name": "Louisville",
+      "state": "Kentucky"
+    },
+    {
+      "id": 30,
+      "name": "Baltimore",
+      "state": "Maryland"
+    },
+    {
+      "id": 31,
+      "name": "Milwaukee",
+      "state": "Wisconsin"
+    },
+    {
+      "id": 32,
+      "name": "Albuquerque",
+      "state": "New Mexico"
+    },
+    {
+      "id": 33,
+      "name": "Tucson",
+      "state": "Arizona"
+    },
+    {
+      "id": 34,
+      "name": "Fresno",
+      "state": "California"
+    },
+    {
+      "id": 35,
+      "name": "Sacramento",
+      "state": "California"
+    },
+    {
+      "id": 36,
+      "name": "Mesa",
+      "state": "Arizona"
+    },
+    {
+      "id": 37,
+      "name": "Kansas City",
+      "state": "Missouri"
+    },
+    {
+      "id": 38,
+      "name": "Atlanta",
+      "state": "Georgia"
+    },
+    {
+      "id": 39,
+      "name": "Long Beach",
+      "state": "California"
+    },
+    {
+      "id": 40,
+      "name": "Colorado Springs",
+      "state": "Colorado"
+    },
+    {
+      "id": 41,
+      "name": "Raleigh",
+      "state": "North Carolina"
+    },
+    {
+      "id": 42,
+      "name": "Miami",
+      "state": "Florida"
+    },
+    {
+      "id": 43,
+      "name": "Virginia Beach",
+      "state": "Virginia"
+    },
+    {
+      "id": 44,
+      "name": "Omaha",
+      "state": "Nebraska"
+    },
+    {
+      "id": 45,
+      "name": "Oakland",
+      "state": "California"
+    },
+    {
+      "id": 46,
+      "name": "Minneapolis",
+      "state": "Minnesota"
+    },
+    {
+      "id": 47,
+      "name": "Tulsa",
+      "state": "Oklahoma"
+    },
+    {
+      "id": 48,
+      "name": "Arlington",
+      "state": "Texas"
+    },
+    {
+      "id": 49,
+      "name": "New Orleans",
+      "state": "Louisiana"
+    },
+    {
+      "id": 50,
+      "name": "Wichita",
+      "state": "Kansas"
+    }
+  ]
