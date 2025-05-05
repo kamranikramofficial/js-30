@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS - Animate On Scroll (Repeating)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 data-aos="fade-down">AOS Animations</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Scroll up and down to see repeating animations</p>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 13l5 5 5-5"></path>
+                    <path d="M7 6l5 5 5-5"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2 data-aos="fade-right">Animate On Scroll</h2>
+            <p data-aos="fade-left" data-aos-delay="200">
+                AOS is a library that allows you to animate elements as they scroll into view.
+                This demo shows how to make AOS animations repeat every time an element enters the viewport.
+            </p>
+            <div class="features">
+                <div class="feature" data-aos="zoom-in">
+                    <h3>Easy to Use</h3>
+                    <p>Just add data-aos attributes to your HTML elements</p>
+                </div>
+                <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Customizable</h3>
+                    <p>Many animation types and options available</p>
+                </div>
+                <div class="feature" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>Performant</h3>
+                    <p>Uses CSS3 transitions for smooth animations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="animations">
+        <div class="container">
+            <h2 data-aos="fade-down">Animation Types</h2>
+            <p data-aos="fade-up" data-aos-delay="200">AOS provides many different animation types. Here are some
+                examples:</p>
+
+            <div class="animation-grid">
+                <div class="animation-card" data-aos="fade-up">
+                    <h3>fade-up</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="fade-down">
+                    <h3>fade-down</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="fade-right">
+                    <h3>fade-right</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="fade-left">
+                    <h3>fade-left</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="zoom-in">
+                    <h3>zoom-in</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="zoom-out">
+                    <h3>zoom-out</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="flip-left">
+                    <h3>flip-left</h3>
+                    <div class="animation-box"></div>
+                </div>
+
+                <div class="animation-card" data-aos="flip-right">
+                    <h3>flip-right</h3>
+                    <div class="animation-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="options">
+        <div class="container">
+            <h2 data-aos="fade-down">Animation Options</h2>
+            <p data-aos="fade-up" data-aos-delay="200">AOS provides several options to customize animations:</p>
+
+            <div class="options-grid">
+                <div class="option-card" data-aos="fade-up" data-aos-duration="3000">
+                    <h3>Duration: 3000ms</h3>
+                    <p>data-aos-duration="3000"</p>
+                </div>
+
+                <div class="option-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Delay: 500ms</h3>
+                    <p>data-aos-delay="500"</p>
+                </div>
+
+                <div class="option-card" data-aos="fade-up" data-aos-easing="ease-in-out-back">
+                    <h3>Easing: ease-in-out-back</h3>
+                    <p>data-aos-easing="ease-in-out-back"</p>
+                </div>
+
+                <div class="option-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <h3>Anchor Placement</h3>
+                    <p>data-aos-anchor-placement="center-bottom"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 data-aos="fade-right">How It Works</h2>
+
+            <div class="steps">
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Include AOS Library</h3>
+                        <p>Add the AOS CSS and JavaScript files to your project.</p>
+                        <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"&gt;&lt;/script&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Initialize AOS</h3>
+                        <p>Initialize AOS in your JavaScript file.</p>
+                        <pre><code>AOS.init({
+  // Global settings
+  duration: 800,
+  easing: 'ease-out',
+  once: false // This makes animations repeat
+});</code></pre>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Add Attributes to Elements</h3>
+                        <p>Add data-aos attributes to the elements you want to animate.</p>
+                        <pre><code>&lt;div data-aos="fade-up"&gt;This will animate&lt;/div&gt;
+&lt;div data-aos="fade-down" data-aos-delay="300"&gt;This will animate with delay&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Make Animations Repeat</h3>
+                        <p>To make animations repeat every time an element enters the viewport:</p>
+                        <pre><code>// Set once: false in AOS.init()
+AOS.init({ once: false });
+
+// Or use custom code to remove aos-animate class when elements leave viewport
+document.addEventListener('scroll', function() {
+  const elements = document.querySelectorAll('[data-aos]');
+  elements.forEach(element => {
+    if (!isElementInViewport(element)) {
+      element.classList.remove('aos-animate');
+    }
+  });
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo">
+        <div class="container">
+            <h2 data-aos="fade-down">Scroll Demo</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Scroll up and down to see these elements animate repeatedly:</p>
+
+            <div class="demo-grid">
+                <div class="demo-item" data-aos="flip-left">
+                    <div class="demo-box"></div>
+                </div>
+                <div class="demo-item" data-aos="flip-right" data-aos-delay="100">
+                    <div class="demo-box"></div>
+                </div>
+                <div class="demo-item" data-aos="flip-left" data-aos-delay="200">
+                    <div class="demo-box"></div>
+                </div>
+                <div class="demo-item" data-aos="flip-right" data-aos-delay="300">
+                    <div class="demo-box"></div>
+                </div>
+                <div class="demo-item" data-aos="flip-left" data-aos-delay="400">
+                    <div class="demo-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AOS Repeating Animations Demo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
