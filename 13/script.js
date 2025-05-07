@@ -2,12 +2,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (typeof AOS !== 'undefined') {
         AOS.init({
-            duration: 800,           // Animation duration in ms
-            easing: 'ease-out',      // Animation easing
-            delay: 0,                // Default delay in ms
-            once: false,             // Whether animation should happen only once - false = repeat
-            mirror: false,           // Whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
+            duration: 800,           
+            easing: 'ease-out',      
+            delay: 0,                
+            once: false,             
+            mirror: false,          
+            anchorPlacement: 'top-bottom', 
         });
 
         // Function to check if element is in viewport
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
             );
         }
 
-        // Remove 'aos-animate' class when elements are not in viewport
         // This ensures animations repeat every time an element enters the viewport
         document.addEventListener('scroll', function () {
             const elements = document.querySelectorAll('[data-aos]');
