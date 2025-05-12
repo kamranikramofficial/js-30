@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Sorted Bands</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <h1> Band Sorter</h1>
+  <input type="text" id="username" placeholder="Your name..." />
+  <br>
+  <textarea id="bandInput" placeholder="Enter band names (one per line or comma-separated)"></textarea>
+  <br>
+  <button onclick="showSortedBands()">Sort My Bands</button>
+
+  <h2 id="user-heading" style="display: none;"></h2>
+  <ul id="band-list" style="display: none;"></ul>
+
+  <script src="app.js"> </script>
+
+</body>
+</html>
