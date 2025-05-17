@@ -6,6 +6,7 @@ checkboxes.forEach(checkbox => {
     if (checkbox.checked) {
       text.classList.add('line-through');
     } else {
+      
       text.classList.remove('line-through');
     }
   });

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
         
         // Minutes
+        
         const minutes = now.getMinutes();
         const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
         minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;

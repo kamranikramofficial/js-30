@@ -18,7 +18,9 @@
              // copy[0] = 99;
              // console.log(original); // [99, 2, 3]
              // console.log(copy);     // [99, 2, 3]
-        
+
+             
+             
 //  4. How to Copy Arrays and Objects (Without Reference)
     // To avoid reference-based changes, you can create a shallow copy using methods like the spread operator or Object.assign().
         // Example

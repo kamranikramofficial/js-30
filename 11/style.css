@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+
 .container {
     max-width: 900px;
     width: 100%;
@@ -123,7 +124,8 @@ body {
     align-items: center;
 }
 
-.left-controls, .right-controls {
+.left-controls,
+.right-controls {
     display: flex;
     align-items: center;
 }
@@ -153,7 +155,8 @@ button:active {
 }
 
 /* Play/Pause button */
-.play-icon, .pause-icon {
+.play-icon,
+.pause-icon {
     position: absolute;
     transition: all 0.3s ease;
 }
@@ -192,7 +195,8 @@ button:active {
     position: relative;
 }
 
-.volume-icon, .volume-mute-icon {
+.volume-icon,
+.volume-mute-icon {
     position: absolute;
     transition: all 0.3s ease;
 }
@@ -222,7 +226,8 @@ button:active {
     opacity: 0;
 }
 
-.volume-mute-icon::before, .volume-mute-icon::after {
+.volume-mute-icon::before,
+.volume-mute-icon::after {
     content: '';
     position: absolute;
     width: 14px;
@@ -280,7 +285,8 @@ button:active {
 }
 
 /* Fullscreen button */
-.fullscreen-icon, .exit-fullscreen-icon {
+.fullscreen-icon,
+.exit-fullscreen-icon {
     position: absolute;
     transition: all 0.3s ease;
 }
@@ -298,7 +304,8 @@ button:active {
     opacity: 0;
 }
 
-.exit-fullscreen-icon::before, .exit-fullscreen-icon::after {
+.exit-fullscreen-icon::before,
+.exit-fullscreen-icon::after {
     content: '';
     position: absolute;
     width: 14px;
@@ -367,7 +374,7 @@ button:active {
     .time {
         display: none;
     }
-    
+
     .volume-slider-container {
         display: none;
     }

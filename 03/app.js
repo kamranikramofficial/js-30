@@ -9,6 +9,8 @@
         function updateMargin() {
             const value = marginSlider.value;
             marginValue.textContent = `${value}px`;
+ 
+            
             
             images[0].style.top = `${value}px`;
             images[0].style.left = `${value}px`;

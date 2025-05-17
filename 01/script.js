@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let height
     let animationId
   
+    
     function initAudio() {
       audioContext = new (window.AudioContext || window.webkitAudioContext)()
       analyser = audioContext.createAnalyser()

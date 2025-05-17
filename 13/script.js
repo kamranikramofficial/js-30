@@ -2,12 +2,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (typeof AOS !== 'undefined') {
         AOS.init({
-            duration: 800,           
-            easing: 'ease-out',      
-            delay: 0,                
-            once: false,             
-            mirror: false,          
-            anchorPlacement: 'top-bottom', 
+            duration: 800,
+            easing: 'ease-out',
+            delay: 0,
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
         });
 
         // Function to check if element is in viewport

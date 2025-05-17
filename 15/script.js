@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initTheme();
 
+    
     renderTasks();
 
     // Event Listeners
