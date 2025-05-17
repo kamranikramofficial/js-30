@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isMuted = false;
     let mouseDownOnProgress = false;
     let mouseDownOnVolume = false;
-    
+
     // Set initial volume
     video.volume = 1;
     updateVolumeProgress();
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pos = Math.max(0, Math.min(1, pos));
         video.volume = pos;
         updateVolumeProgress();
-        
+
         if (pos === 0) {
             videoContainer.classList.add('muted');
             video.muted = true;
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rect = progressBar.getBoundingClientRect();
         const pos = (e.clientX - rect.left) / rect.width;
         const time = pos * video.duration;
-        
+
         progressHoverTime.textContent = formatTime(time);
         progressHoverTime.style.left = `${e.clientX - rect.left}px`;
         progressHoverTime.style.display = 'block';
@@ -121,33 +121,33 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseBtn.addEventListener('click', togglePlay);
     bigPlayBtn.addEventListener('click', togglePlay);
     video.addEventListener('click', togglePlay);
-    
+
     volumeBtn.addEventListener('click', toggleMute);
     fullscreenBtn.addEventListener('click', toggleFullscreen);
-    
+
     video.addEventListener('timeupdate', updateProgress);
-    
+
     video.addEventListener('loadedmetadata', () => {
         durationEl.textContent = formatTime(video.duration);
     });
-    
+
     video.addEventListener('ended', () => {
         videoContainer.classList.remove('playing');
         videoContainer.classList.add('paused');
     });
-    
+
     // Progress bar events
     progressBar.addEventListener('click', setProgress);
-    
+
     progressBar.addEventListener('mousedown', () => {
         mouseDownOnProgress = true;
     });
-    
+
     document.addEventListener('mouseup', () => {
         mouseDownOnProgress = false;
         mouseDownOnVolume = false;
     });
-    
+
     document.addEventListener('mousemove', (e) => {
         if (mouseDownOnProgress) {
             setProgress(e);
@@ -156,32 +156,32 @@ document.addEventListener('DOMContentLoaded', () => {
             setVolume(e);
         }
     });
-    
+
     // Volume slider events
     volumeSlider.addEventListener('click', setVolume);
-    
+
     volumeSlider.addEventListener('mousedown', (e) => {
         mouseDownOnVolume = true;
         setVolume(e);
     });
-    
+
     // Progress hover time
     progressBar.addEventListener('mousemove', showHoverTime);
     progressBar.addEventListener('mouseout', () => {
         progressHoverTime.style.display = 'none';
     });
-    
+
     // Fullscreen change event
     document.addEventListener('fullscreenchange', () => {
         isFullscreen = !!document.fullscreenElement;
         videoContainer.classList.toggle('fullscreen', isFullscreen);
     });
-    
+
     document.addEventListener('webkitfullscreenchange', () => {
         isFullscreen = !!document.webkitFullscreenElement;
         videoContainer.classList.toggle('fullscreen', isFullscreen);
     });
-    
+
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Space') {
@@ -213,17 +213,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add ripple effect on buttons
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             const ripple = document.createElement('span');
             ripple.classList.add('ripple');
             this.appendChild(ripple);
-            
+
             const x = e.clientX - this.getBoundingClientRect().left;
             const y = e.clientY - this.getBoundingClientRect().top;
-            
+
             ripple.style.left = `${x}px`;
             ripple.style.top = `${y}px`;
-            
+
             setTimeout(() => {
                 ripple.remove();
             }, 600);

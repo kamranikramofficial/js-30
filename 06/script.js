@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
     const loadingIndicator = document.getElementById('loading-indicator');
-    
+
     let cities = [];
     let selectedIndex = -1;
     let debounceTimer;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     function debounce(func, delay) {
-        return function() {
+        return function () {
             const context = this;
             const args = arguments;
             clearTimeout(debounceTimer);
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    const performSearch = debounce(function(query) {
+    const performSearch = debounce(function (query) {
         if (query.length < 2) {
             searchResults.innerHTML = '';
             searchResults.classList.remove('active');
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingIndicator.style.display = 'block';
 
         setTimeout(() => {
-            const filteredCities = cities.filter(city => 
-                city.name.toLowerCase().includes(query.toLowerCase()) || 
+            const filteredCities = cities.filter(city =>
+                city.name.toLowerCase().includes(query.toLowerCase()) ||
                 city.state.toLowerCase().includes(query.toLowerCase())
             ).slice(0, 10);
 
@@ -99,19 +99,19 @@ document.addEventListener('DOMContentLoaded', function() {
         searchResults.classList.remove('active');
     }
 
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         const query = this.value.trim();
         performSearch(query);
     });
 
-    searchInput.addEventListener('focus', function() {
+    searchInput.addEventListener('focus', function () {
         const query = this.value.trim();
         if (query.length >= 2) {
             performSearch(query);
         }
     });
 
-    searchInput.addEventListener('keydown', function(e) {
+    searchInput.addEventListener('keydown', function (e) {
         const items = searchResults.querySelectorAll('.search-result-item');
 
         if (e.key === 'ArrowDown') {
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (e.key === 'Enter') {
             e.preventDefault();
             if (selectedIndex >= 0 && items[selectedIndex]) {
-                const selectedResult = cities.find(city => 
+                const selectedResult = cities.find(city =>
                     city.name === items[selectedIndex].querySelector('.result-name').textContent.replace(/\s+/g, ' ')
                 );
                 if (selectedResult) {
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.innerHTML = '';
             searchResults.classList.remove('active');

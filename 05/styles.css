@@ -11,6 +11,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -79,11 +81,11 @@ h1 {
     .gallery {
         height: 60vh;
     }
-    
+
     .gallery-item:not(.active) {
         flex: 0.2;
     }
-    
+
     .gallery-item.active {
         flex: 5;
     }

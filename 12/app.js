@@ -1,26 +1,26 @@
 // Konami Code
 const konamiCode = [
-    "ArrowUp", "ArrowUp",
-    "ArrowDown", "ArrowDown",
-    "ArrowLeft", "ArrowRight",
-    "ArrowLeft", "ArrowRight",
-    "b", "a"
-  ];
+  "ArrowUp", "ArrowUp",
+  "ArrowDown", "ArrowDown",
+  "ArrowLeft", "ArrowRight",
+  "ArrowLeft", "ArrowRight",
+  "b", "a"
+];
 
-  // Store user input
-  let userInput = [];
+// Store user input
+let userInput = [];
 
-  // Listen for key presses
-  document.addEventListener("keydown", function(event) {
-    userInput.push(event.key);
+// Listen for key presses
+document.addEventListener("keydown", function (event) {
+  userInput.push(event.key);
 
-    // Limit input to last 10 keys only
-    if (userInput.length > konamiCode.length) {
-      userInput.shift();
-    }
+  // Limit input to last 10 keys only
+  if (userInput.length > konamiCode.length) {
+    userInput.shift();
+  }
 
-    // Check for match
-    if (JSON.stringify(userInput) === JSON.stringify(konamiCode)) {
-      document.getElementById("message").textContent = "🎉 Konami Code Activated!";
-    }
-  });
+  // Check for match
+  if (JSON.stringify(userInput) === JSON.stringify(konamiCode)) {
+    document.getElementById("message").textContent = "🎉 Konami Code Activated!";
+  }
+});
