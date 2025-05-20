@@ -1,0 +1,83 @@
+/* General Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffcc88;
+}
+
+/* Webcam and Canvas Styling */
+video, canvas {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  border: 4px solid #00ffcc;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #00ffcc55;
+  transition: transform 0.3s ease-in-out;
+}
+
+video:hover, canvas:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  video, canvas {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  video, canvas {
+    max-height: 300px;
+  }
+}
