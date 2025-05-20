@@ -1,4 +1,3 @@
-/* General Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,78 +5,163 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #000000, #1a1a1a);
-  color: #ffffff;
-  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #121212;
+  color: white;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00e5ff;
+  font-size: 2.5rem;
+}
+
+.webcam-container {
+  position: relative;
   width: 100%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 30px 20px;
-  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Heading */
-h1 {
-  font-size: 2rem;
-  color: #00ffcc;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00ffcc88;
-}
-
-/* Webcam and Canvas Styling */
-video, canvas {
+.webcam, .photo {
   width: 100%;
   height: auto;
-  max-height: 480px;
-  border: 4px solid #00ffcc;
-  border-radius: 12px;
+  transform: scaleX(-1); /* Mirror the webcam */
+  background: #333;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.controls {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.effects, .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #444;
+}
+
+button.active {
+  background: #00e5ff;
+  color: #121212;
+}
+
+#take-photo {
+  background: #ff4081;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+#take-photo:hover {
+  background: #ff5a92;
+}
+
+#download {
+  background: #4caf50;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+#download:hover {
+  background: #5dbd61;
+}
+
+#download:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.strip {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
   margin-top: 20px;
-  box-shadow: 0 0 20px #00ffcc55;
-  transition: transform 0.3s ease-in-out;
 }
 
-video:hover, canvas:hover {
-  transform: scale(1.02);
+.strip img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .container {
-    padding: 25px 15px;
-  }
+.strip img:hover {
+  transform: scale(1.05);
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-
-  video, canvas {
-    max-height: 400px;
+  
+  .strip img {
+    width: 120px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
-
-  video, canvas {
-    max-height: 300px;
+  
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .strip img {
+    width: 100px;
+  }
+  
+  .effects, .actions {
+    gap: 5px;
   }
 }

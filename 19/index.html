@@ -2,14 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unreal Webcam Fun</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🎥 Unreal Webcam Fun</h1>
-    <video id="video" autoplay></video>
-    <canvas id="canvas"></canvas>
+    <h1>Unreal Webcam Fun</h1>
+    
+    <div class="webcam-container">
+      <video class="webcam" autoplay playsinline></video>
+      <canvas class="photo"></canvas>
+    </div>
+    
+    <div class="controls">
+      <div class="effects">
+        <button data-effect="normal" class="active">Normal</button>
+        <button data-effect="red">Red</button>
+        <button data-effect="green">Green</button>
+        <button data-effect="blue">Blue</button>
+        <button data-effect="grayscale">Grayscale</button>
+        <button data-effect="invert">Invert</button>
+        <button data-effect="pixelate">Pixelate</button>
+      </div>
+      
+      <div class="actions">
+        <button id="take-photo">Take Photo</button>
+        <button id="download" disabled>Download</button>
+      </div>
+    </div>
+    
+    <div class="strip">
+      <!-- Photos will be added here -->
+    </div>
   </div>
 
   <script src="script.js"></script>
