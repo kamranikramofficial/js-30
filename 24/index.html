@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation - Day 24</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Kamran Ikram</h1>
+            <p>Frontend Web Developer - Day 24</p>
+            <p class="subtitle">Scroll down to see the navigation stick to the top!</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Kamran Ikram</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome Home</h2>
+                <p>This is the home section. Notice how the navigation bar becomes sticky when you scroll past the hero section. The navigation smoothly transitions with a subtle shadow and background change.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Fast Performance</h3>
+                        <p>Lightning-fast loading times and smooth animations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Looks great on all devices, from mobile to desktop.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>Well-structured, maintainable, and semantic HTML/CSS/JS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section alt-bg">
+            <div class="container">
+                <h2>About This Project</h2>
+                <p>The sticky navigation is implemented using JavaScript to detect scroll position and add/remove CSS classes. This creates a smooth transition effect when the navigation becomes fixed to the top of the viewport.</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>How It Works</h3>
+                        <ul>
+                            <li><strong>Scroll Detection:</strong> JavaScript monitors the scroll position</li>
+                            <li><strong>Dynamic Classes:</strong> CSS classes are added/removed based on scroll</li>
+                            <li><strong>Smooth Transitions:</strong> CSS transitions create fluid animations</li>
+                            <li><strong>Responsive Design:</strong> Works perfectly on all screen sizes</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="filename">script.js</span>
+                            </div>
+                            <div class="code-content">
+                                <code>
+window.addEventListener('scroll', () => {<br>
+&nbsp;&nbsp;const navbar = document.getElementById('navbar');<br>
+&nbsp;&nbsp;if (window.scrollY > 100) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;navbar.classList.add('sticky');<br>
+&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;navbar.classList.remove('sticky');<br>
+&nbsp;&nbsp;}<br>
+});
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of web development services to help bring your ideas to life.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>Beautiful, modern designs that capture your brand's essence and engage your audience.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Custom web applications built with the latest technologies and best practices.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your search engine rankings and drive more organic traffic to your site.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Analytics</h3>
+                        <p>Track your website's performance and gain insights into user behavior.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section alt-bg">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <p>Check out some of our recent projects and see what we can create for you.</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="img/Project2.png" alt="Project 1">
+                            <div class="portfolio-overlay">
+                                <h3>E-commerce Platform</h3>
+                                <p>Modern online store with payment integration</p>
+                                <a href="https://kamranikramofficial.github.io/Portfolio/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="img/Project3.png" alt="Project 2">
+                            <div class="portfolio-overlay">
+                                <h3>Corporate Website</h3>
+                                <p>Professional business website with CMS</p>
+                                <a href="https://kamranikramofficial.github.io/Portfolio/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="img/Project5.png" alt="Project 3">
+                            <div class="portfolio-overlay">
+                                <h3>Mobile App</h3>
+                                <p>Cross-platform mobile application</p>
+                                <a href="https://kamranikramofficial.github.io/Portfolio/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="img/Project4.png" alt="Project 4">
+                            <div class="portfolio-overlay">
+                                <h3>Dashboard UI</h3>
+                                <p>Analytics dashboard with data visualization</p>
+                                <a href="https://kamranikramofficial.github.io/Portfolio/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your next project? Let's work together to create something amazing.</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Pakistan, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+92 3022901833</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>kamranikram706@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kamran Ikram</h3>
+                    <p>Frontend Web Developer creating beautiful, functional websites with modern sticky navigation and responsive design.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/kamranikramofficial/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kamranikramofficial/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/kamranikramofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/kamranikram_dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 3022901833</p>
+                    <p><i class="fas fa-envelope"></i> kamranikram706@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pakistan, Karachi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StickyNav. All rights reserved. | Day 24 - DOM & Interface Fundamentals</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
