@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background Elements -->
+        <div class="bg-elements">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="grid-lines"></div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <h1>World Time</h1>
+            <div class="timezone-selector">
+                <div class="select-wrapper">
+                    <select id="timezoneSelect">
+                        <option value="Asia/Karachi" selected>Pakistan (PKT)</option>
+                        <option value="America/New_York">New York (EST)</option>
+                        <option value="Europe/London">London (GMT)</option>
+                        <option value="Europe/Paris">Paris (CET)</option>
+                        <option value="Asia/Tokyo">Tokyo (JST)</option>
+                        <option value="Asia/Dubai">Dubai (GST)</option>
+                        <option value="Australia/Sydney">Sydney (AEST)</option>
+                        <option value="Pacific/Auckland">Auckland (NZST)</option>
+                        <option value="Asia/Shanghai">Shanghai (CST)</option>
+                        <option value="Asia/Kolkata">India (IST)</option>
+                        <option value="Europe/Moscow">Moscow (MSK)</option>
+                        <option value="America/Los_Angeles">Los Angeles (PST)</option>
+                        <option value="America/Chicago">Chicago (CST)</option>
+                        <option value="America/Toronto">Toronto (EST)</option>
+                        <option value="Europe/Berlin">Berlin (CET)</option>
+                        <option value="Europe/Rome">Rome (CET)</option>
+                        <option value="Asia/Singapore">Singapore (SGT)</option>
+                        <option value="Asia/Seoul">Seoul (KST)</option>
+                        <option value="Africa/Cairo">Cairo (EET)</option>
+                        <option value="Africa/Johannesburg">Johannesburg (SAST)</option>
+                    </select>
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Clock Display -->
+        <div class="clock-container">
+            <div class="location-display">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="locationName">Pakistan</span>
+            </div>
+
+            <!-- Digital Clock -->
+            <div class="digital-clock">
+                <div class="time-section">
+                    <div class="flip-clock-container">
+                        <div class="flip-clock hours">
+                            <div class="flip-card" data-hour-tens>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                            <div class="flip-card" data-hour-ones>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                        </div>
+                        <div class="label">Hours</div>
+                    </div>
+
+                    <div class="time-divider">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <div class="flip-clock-container">
+                        <div class="flip-clock minutes">
+                            <div class="flip-card" data-minute-tens>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                            <div class="flip-card" data-minute-ones>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                        </div>
+                        <div class="label">Minutes</div>
+                    </div>
+
+                    <div class="time-divider">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <div class="flip-clock-container">
+                        <div class="flip-clock seconds">
+                            <div class="flip-card" data-second-tens>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                            <div class="flip-card" data-second-ones>
+                                <div class="top">0</div>
+                                <div class="bottom">0</div>
+                            </div>
+                        </div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date Display -->
+            <div class="date-display">
+                <div class="date" id="currentDate">
+                    Monday, January 1, 2024
+                </div>
+            </div>
+
+            <!-- AM/PM Indicator -->
+            <div class="ampm-container">
+                <div class="ampm-indicator">
+                    <div class="ampm-item" id="amIndicator">AM</div>
+                    <div class="ampm-item" id="pmIndicator">PM</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Created by Kamran Ikram | <span id="currentYear">2024</span></p>
+            <div class="social-links">
+                <a href="https://github.com/kamranikramofficial/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kamranikramofficial/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/kamranikramofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/kamranikram_dev" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
