@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Drag to Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1>Click & Drag to Scroll</h1>
+                <p>Experience smooth drag scrolling across different content types</p>
+            </div>
+        </header>
+
+        <!-- Photo Gallery Section -->
+        <section class="scroll-section">
+            <div class="container">
+                <h2>Photo Gallery</h2>
+                <p class="section-description">Drag to explore beautiful landscapes</p>
+                <div class="scroll-container" data-scroll="horizontal">
+                    <div class="scroll-content">
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Mountain Landscape">
+                            <div class="photo-overlay">
+                                <h3>Mountain Peak</h3>
+                                <p>Majestic mountain views</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Ocean View">
+                            <div class="photo-overlay">
+                                <h3>Ocean Waves</h3>
+                                <p>Peaceful ocean scenery</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Forest Path">
+                            <div class="photo-overlay">
+                                <h3>Forest Trail</h3>
+                                <p>Serene forest pathway</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Desert Sunset">
+                            <div class="photo-overlay">
+                                <h3>Desert Sunset</h3>
+                                <p>Golden hour in the desert</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="City Skyline">
+                            <div class="photo-overlay">
+                                <h3>City Lights</h3>
+                                <p>Urban skyline at night</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Waterfall">
+                            <div class="photo-overlay">
+                                <h3>Waterfall</h3>
+                                <p>Cascading natural beauty</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Snow Mountains">
+                            <div class="photo-overlay">
+                                <h3>Snow Peaks</h3>
+                                <p>Winter mountain landscape</p>
+                            </div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="img.jpg" alt="Beach">
+                            <div class="photo-overlay">
+                                <h3>Tropical Beach</h3>
+                                <p>Paradise found</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Cards Section -->
+        <section class="scroll-section alt-bg">
+            <div class="container">
+                <h2>Product Showcase</h2>
+                <p class="section-description">Drag to browse our featured products</p>
+                <div class="scroll-container" data-scroll="horizontal">
+                    <div class="scroll-content">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Wireless Headphones">
+                                <div class="product-badge">New</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Wireless Headphones</h3>
+                                <p class="product-price">$199.99</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Smart Watch">
+                                <div class="product-badge sale">Sale</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Smart Watch</h3>
+                                <p class="product-price">$299.99 <span class="old-price">$399.99</span></p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Laptop">
+                            </div>
+                            <div class="product-info">
+                                <h3>Gaming Laptop</h3>
+                                <p class="product-price">$1,299.99</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Smartphone">
+                                <div class="product-badge">Hot</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Smartphone Pro</h3>
+                                <p class="product-price">$899.99</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Tablet">
+                            </div>
+                            <div class="product-info">
+                                <h3>Tablet Pro</h3>
+                                <p class="product-price">$599.99</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img.jpg" alt="Camera">
+                                <div class="product-badge">New</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Digital Camera</h3>
+                                <p class="product-price">$799.99</p>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+        <section class="scroll-section">
+            <div class="container">
+                <h2>Our Team</h2>
+                <p class="section-description">Meet the amazing people behind our success</p>
+                <div class="scroll-container" data-scroll="horizontal">
+                    <div class="scroll-content">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="img.jpg" alt="John Doe">
+                            </div>
+                            <div class="team-info">
+                                <h3>John Doe</h3>
+                                <p class="team-role">CEO & Founder</p>
+                                <p class="team-description">Visionary leader with 15+ years of experience in tech innovation.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="img.jpg" alt="Jane Smith">
+                            </div>
+                            <div class="team-info">
+                                <h3>Jane Smith</h3>
+                                <p class="team-role">CTO</p>
+                                <p class="team-description">Tech expert passionate about building scalable solutions.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="img.jpg" alt="Mike Johnson">
+                            </div>
+                            <div class="team-info">
+                                <h3>Mike Johnson</h3>
+                                <p class="team-role">Lead Designer</p>
+                                <p class="team-description">Creative designer focused on user experience and beautiful interfaces.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="img.jpg" alt="Sarah Wilson">
+                            </div>
+                            <div class="team-info">
+                                <h3>Sarah Wilson</h3>
+                                <p class="team-role">Marketing Director</p>
+                                <p class="team-description">Strategic marketer with expertise in digital growth and brand building.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="img.jpg" alt="David Brown">
+                            </div>
+                            <div class="team-info">
+                                <h3>David Brown</h3>
+                                <p class="team-role">Full Stack Developer</p>
+                                <p class="team-description">Versatile developer skilled in both frontend and backend technologies.</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fab fa-stackoverflow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vertical Scroll Section -->
+        <section class="scroll-section alt-bg">
+            <div class="container">
+                <h2>Vertical Scroll</h2>
+                <p class="section-description">Drag vertically to scroll through content</p>
+                <div class="scroll-container vertical" data-scroll="vertical">
+                    <div class="scroll-content">
+                        <div class="vertical-item">
+                            <div class="item-number">01</div>
+                            <div class="item-content">
+                                <h3>Innovation</h3>
+                                <p>We constantly push the boundaries of what's possible, creating cutting-edge solutions that transform industries.</p>
+                            </div>
+                        </div>
+                        <div class="vertical-item">
+                            <div class="item-number">02</div>
+                            <div class="item-content">
+                                <h3>Quality</h3>
+                                <p>Every product we deliver meets the highest standards of excellence, ensuring reliability and performance.</p>
+                            </div>
+                        </div>
+                        <div class="vertical-item">
+                            <div class="item-number">03</div>
+                            <div class="item-content">
+                                <h3>Collaboration</h3>
+                                <p>We believe in the power of teamwork and partnership to achieve extraordinary results together.</p>
+                            </div>
+                        </div>
+                        <div class="vertical-item">
+                            <div class="item-number">04</div>
+                            <div class="item-content">
+                                <h3>Sustainability</h3>
+                                <p>Our commitment to environmental responsibility drives us to create sustainable solutions for the future.</p>
+                            </div>
+                        </div>
+                        <div class="vertical-item">
+                            <div class="item-number">05</div>
+                            <div class="item-content">
+                                <h3>Growth</h3>
+                                <p>We foster continuous learning and development, empowering our team and clients to reach new heights.</p>
+                            </div>
+                        </div>
+                        <div class="vertical-item">
+                            <div class="item-number">06</div>
+                            <div class="item-content">
+                                <h3>Impact</h3>
+                                <p>Everything we do is designed to make a positive difference in the world and the lives we touch.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Click & Drag Scroll</h3>
+                        <p>Experience smooth, intuitive scrolling with mouse drag functionality.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Horizontal Scrolling</li>
+                            <li>Vertical Scrolling</li>
+                            <li>Smooth Animations</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Created by</h4>
+                        <p>Kamran Ikram</p>
+                        <div class="social-links">
+                            <a href="https://github.com/kamranikramofficial/" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kamranikramofficial/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/kamranikramofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/kamranikram_dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Click & Drag Scroll. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
